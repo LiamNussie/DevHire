@@ -1,0 +1,61 @@
+.sidebar {
+    width: 270px;
+    height: 100vh;
+    border-right: 1px solid #D9DBE9;
+    padding: 1rem 2rem 2rem 2rem;
+    box-sizing: border-box;
+
+    .name {
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 1px;
+
+        .dev {
+            color: #14142B;
+        }
+        .hire {
+            color: #1D9BF0;
+        }
+    }
+
+    .nav {
+        margin-top: 1.6rem;
+
+        .active {
+            color: #14142B !important;
+            margin-left: -.8rem;
+
+            i {
+                color: #fff;
+                background-color: #1D9BF0;
+                padding: 1rem;
+                border-radius: 5px;
+                transform: scale(.5);
+            }
+
+            span {
+                margin-left: -.8rem;
+            }
+        }
+        
+        .nav-item {
+            display: block;
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.43);
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 1.8rem;
+            transition: 150ms ease;
+
+            i {
+                margin-right: 1.3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .sidebar {
+        display: none;
+    }
+}

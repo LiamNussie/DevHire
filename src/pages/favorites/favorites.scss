@@ -1,0 +1,163 @@
+.favorites {
+    padding: 5.6rem 2rem 2rem 2rem;
+    width: 100%;
+
+    .temp {
+        display: none;
+        position: absolute;
+        right: 6%;
+        top: 3%;
+        text-align: center;
+
+        .home-nav {
+            font-size: 1.7em;
+            padding: .7rem;
+            border-radius: 10px;
+            background-color: #fff;
+            color: #1D9BF0;
+        }
+
+        .info {
+            color: #14142B;
+        }
+    }
+
+    .name {
+        display: none;
+        font-weight: 700;
+        font-size: 2rem;
+        letter-spacing: 1px;
+
+        .dev {
+            color: #14142B;
+        }
+        .hire {
+            color: #1D9BF0;
+        }
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #14142B;
+    }
+
+    .card-list {
+        display: flex;
+        height: 65vh;
+        overflow-y: scroll;
+        justify-content: space-between;
+        gap: 1rem;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 3rem;
+
+        .card {
+            flex: 0 0 260px;
+            background-color: #fff;
+            border-radius: 10px;
+            height: 250px;
+            padding: .2rem;
+            cursor: pointer;
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.7rem 1rem 1rem .7rem;
+
+                .txt {
+                    .name {
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 12px;
+                        font-weight: 700;
+                    }
+                    .fee {
+                        color: rgba(0, 0, 0, 0.49);
+                        font-size: 10px;
+                        font-weight: 600;
+                    }
+                }
+
+                .hire {
+                    color: #1D9BF0;
+                    font-size: 12px;
+                    font-weight: 700;
+                }
+            }
+
+            .top {
+                position: relative;
+                background-color: gray;
+                width: 100%;
+                height: 70%;
+                border-radius: 10px;
+                background-size: cover;
+
+                i {
+                    position: absolute;
+                    right: 3%;
+                    top: 4%;
+                    color: #fff;
+                    background-color: #BBBBBB;
+                    padding: .5rem;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 250ms ease;
+                }
+
+                .liked {
+                    color: #FF4135;
+                    background-color: #fff;
+                }
+
+                .avatar {
+                    position: absolute;
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    left: 3%;
+                    background-size: cover;
+                    bottom: -12%;
+                    background-color:gray;
+                    border: 2px solid #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .favorites {
+        padding: 3rem .7rem 2rem .7rem;
+
+        .card-list {
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .favorites {
+        padding: 3rem 1rem 2rem 1rem;
+
+        
+        .temp {
+            display: block;
+        }
+
+        .name {
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .card-list {
+            .card {
+                flex: 1 1 200px;
+            }
+        }
+    }
+}

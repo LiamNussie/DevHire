@@ -1,0 +1,4 @@
+export const uiActionTypes = {
+    NAVDRAWER_OPEN: 'NAVDRAWER_OPEN',
+    NAVDRAWER_CLOSE: 'NAVDRAWER_CLOSE'
+}
